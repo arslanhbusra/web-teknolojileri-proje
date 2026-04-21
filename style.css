@@ -7,6 +7,7 @@
   --white-color: #ffffff;
   --text-color: #2f2f2f;
   --light-background: #f8f8f8;
+  --shy-pink: #eed4db;
   --border-radius: 18px;
   --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
@@ -24,28 +25,30 @@ body {
 }
 
 .site-navbar {
-  background: linear-gradient(90deg, var(--dark-green), var(--main-green));
-  padding: 14px 0;
+  background-color: var(--main-green);
+  color: white;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .site-logo {
-  color: var(--white-color);
-  font-weight: 700;
+  color: var(--light-pink);
+  font-weight: 800;
   font-size: 1.3rem;
 }
 
 .site-logo:hover {
-  color: var(--light-pink);
+  color: var(--dark-green);
 }
 
 .navbar-nav .nav-link {
-  color: var(--white-color);
-  font-weight: 500;
+  color: var(--soft-pink);
+  font-weight: 600;
   margin-left: 12px;
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--light-pink);
+  color: var(--dark-green);
 }
 
 .hero-section {
@@ -70,7 +73,7 @@ body {
 
 .hero-title {
   font-size: 2.7rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--dark-green);
   margin-bottom: 18px;
 }
@@ -82,29 +85,30 @@ body {
 }
 
 .main-button {
-  background-color: var(--main-green);
-  color: var(--white-color);
+  text-decoration: none;
+  background-color: #adc26b ;
+  color: #ac5867;
   border: none;
-  padding: 12px 24px;
+  padding: 8px 24px;
   border-radius: 12px;
   font-weight: 600;
 }
 
 .main-button:hover {
-  background-color: var(--dark-green);
-  color: var(--white-color);
+  background-color: #ac5867 ;
+  color: #adc26b ;
 }
 
 .hero-card,
 .content-card {
-  background-color: var(--white-color);
+  background-color: var(--shy-pink);
   border-radius: var(--border-radius);
   padding: 28px;
   box-shadow: var(--box-shadow);
 }
 
 .section-title {
-  color: var(--dark-green);
+  color: #2d4839;
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 16px;
