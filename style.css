@@ -9,7 +9,8 @@
   --light-background: #f8f8f8;
   --shy-pink: #eed4db;
   --border-radius: 18px;
-  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --card-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  --transition-time: 0.3s;
 }
 
 * {
@@ -18,10 +19,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--light-background);
   color: var(--text-color);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .site-navbar {
@@ -41,10 +52,19 @@ body {
   color: var(--dark-green);
 }
 
+.navbar-toggler {
+  border: 1px solid var(--soft-green); 
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .navbar-nav .nav-link {
   color: var(--soft-pink);
   font-weight: 600;
   margin-left: 12px;
+  padding: 8px 12px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -105,6 +125,23 @@ body {
   border-radius: var(--border-radius);
   padding: 28px;
   box-shadow: var(--box-shadow);
+}
+.info-list {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, var(--light-pink), #f6edf1);
+  border-left: 6px solid var(--main-green);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--card-shadow);
 }
 
 .section-title {
@@ -178,5 +215,23 @@ body {
   .hero-card,
   .content-card {
     padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+  }
+
+  .content-card {
+    padding: 18px;
   }
 }
