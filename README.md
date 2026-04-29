@@ -19,6 +19,7 @@ Bu proje, Web Teknolojileri dersi için hazırlanmıştır.
 - PHP
 - TMDb API
 
+## Proje Güncellemeleri
 - Hakkımda sayfası tamamlandı
 - Özgeçmiş sayfası tamamlandı
 - Sivas Şehir Tanıtım sayfası tamamlandı ve slider eklendi
