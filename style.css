@@ -142,6 +142,9 @@ img {
   border-radius: 16px;
   padding: 20px;
   box-shadow: var(--card-shadow);
+  height: auto;
+  min-height: max-content;
+  overflow: visible;
 }
 
 .section-title {
@@ -244,3 +247,43 @@ img {
     box-shadow: var(--card-shadow);
     margin-bottom: 20px;
   }
+
+.sehir-card {
+  background-color: var(--soft-green);
+  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.sehir-card:hover {
+  transform: translateY(-5px);
+}
+
+.sehir-resim {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.sehir-card h5 {
+  color: var(--dark-green);
+  font-weight: 600;
+  padding: 16px 16px 10px; 
+  margin: 0;
+}
+
+.sehir-card p {
+  padding: 0 16px 16px;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.slider-image {
+  height: 600px;
+  object-fit: cover;
+  border-radius: 16px;
+}

@@ -18,3 +18,7 @@ Bu proje, Web Teknolojileri dersi için hazırlanmıştır.
 - Vue.js
 - PHP
 - TMDb API
+
+- Hakkımda sayfası tamamlandı
+- Özgeçmiş sayfası tamamlandı
+- Sivas Şehir Tanıtım sayfası tamamlandı ve slider eklendi
