@@ -1,4 +1,5 @@
 const apiKey = "8ea39cf179ae1ffbf262b2c273b05b40";
+
 const button = document.getElementById("loadMovieBtn");
 const movieListDiv = document.getElementById("movieList");
 
@@ -8,7 +9,7 @@ button.addEventListener("click", function () {
     movieListDiv.innerHTML = '<div class="text-center w-100"><p>Favori filmler yükleniyor...</p></div>';
 
     const fetchPromises = favoriFilmIDleri.map(id => 
-        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=tr-TR`)
+        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=eng-ENG`)
         .then(res => res.json())
     );
 
@@ -19,20 +20,19 @@ button.addEventListener("click", function () {
             movies.forEach(movie => {
                 if (movie.id) {
                     const cardHtml = `
-                        <div class="col-md-3 mb-3">
-                            <div class="card h-100 shadow-sm border-0">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="film-card">
                                 <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" 
-                                     class="card-img-top" 
-                                     alt="${movie.title}" 
-                                     style="border-radius: 10px 10px 0 0;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">${movie.title}</h5>
-                                    <p class="card-text text-muted" style="font-size: 0.85rem;">
-                                        <strong>Yıl:</strong> ${movie.release_date ? movie.release_date.split("-")[0] : "N/A"} | 
-                                        <strong>Puan:</strong> ⭐${movie.vote_average.toFixed(1)}
-                                    </p>
-                                    <p class="card-text" style="font-size: 0.9rem; color: #555;">
-                                        ${movie.overview ? movie.overview.substring(0, 120) + '...' : "Açıklama bulunamadı."}
+                                     class="film-image" 
+                                     alt="${movie.title}">
+                                <div class="film-content">
+                                    <h5>${movie.title}</h5>
+                                    <div class="film-rating">
+                                        ⭐ ${movie.vote_average.toFixed(1)} 
+                                        <small class="text-muted">(${movie.release_date ? movie.release_date.split("-")[0] : "N/A"})</small>
+                                    </div>
+                                    <p class="film-overview">
+                                        ${movie.overview ? movie.overview.substring(0, 100) + '...' : "Açıklama bulunamadı."}
                                     </p>
                                 </div>
                             </div>
