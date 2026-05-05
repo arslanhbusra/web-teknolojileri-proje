@@ -57,15 +57,94 @@
             </header>
             <main class="page-section">
                   <div class="container">
+                        
                         <h1 class="page-title">İletişim</h1>
-                        <div class="content-card">
+                        
+                        <section class="content-card">
                               <h2 class="section-title">İletişim Formu</h2>
-                              <p>Bu sayfada iletişim formu ve doğrulama işlemleri yer alacaktır.</p>
-                        </div> <br>
+                              
+                              <form id="iletisimFormu" action="iletisimbilgileri.php" method="post" novalidate>
+                                    <div class="row g-3">
+                                          <div class="col-md-6">
+                                                <label for="tamisim" class="form-label">Ad Soyad</label>
+                                                <input type="text" id="tamisim" name="tamisim" class="form-control">
+                                          </div>
 
-                        <div class="content-card">
-                              <h2 class="section-title"> Doğrulama İşlemleri</h2>
-                        </div>
+                                          <div class="col-md-6">
+                                                <label for="emailAddress" class="form-label">E-posta</label>
+                                                <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="b777777777@ogr.sakarya.edu.tr">
+                                          </div>
+
+                                          <div class="col-md-6">
+                                                <label for="telNo" class="form-label">Telefon Numarası</label>
+                                                <input type="tel" id="telNo" name="telNo" class="form-control" placeholder="0555 777 77 77">
+                                          </div>
+
+                                          <div class="col-md-6">
+                                                <label for="sehirIsmi" class="form-label">Şehir</label>
+                                                <select name="sehirIsmi" id="sehirIsmi" class="form-select">
+                                                      <option value="">Şehir Seçiniz</option>
+                                                      <option value="Ankara">Ankara</option>
+                                                      <option value="Çanakkale">Çanakkale</option>
+                                                      <option value="İstanbul">İstanbul</option>
+                                                      <option value="Kastamonu">Kastamonu</option>
+                                                      <option value="Kocaeli">Kocaeli</option>
+                                                      <option value="Malatya">Malatya</option>
+                                                      <option value="Sakarya">Sakarya</option>
+                                                      <option value="Sivas">Sivas</option>
+                                                </select>
+                                          </div>
+
+                                          <div class="col-md-6">
+                                                <label class="form-label d-block">Cinsiyet</label>
+                                                <div class="form-check form-check-inline">
+                                                      <input type="radio" id="kadin" name="cinsiyet" value="Kadın" class="form-check-input">
+                                                      <label for="kadin" class="form-check-label">Kadın</label>
+                                                </div>
+
+                                                <div class="form-check form-check-inline">
+                                                      <input type="radio" id="erkek" name="cinsiyet" value="Erkek" class="form-check-input">
+                                                      <label for="erkek" class="form-check-label">Erkek</label>
+                                                </div>
+                                          </div>
+
+                                          <div class="col-md-6">
+                                                <label class="form-label d-block">İlgi Alanları</label>
+
+                                                <div class="form-check form-check-inline">
+                                                      <input type="checkbox" id="hobiFilm" name="hobiler[]" value="Film" class="form-check-input">
+                                                      <label for="hobiFilm" class="form-check-label">Film</label>
+                                                </div>
+
+                                                <div class="form-check form-check-inline">
+                                                      <input type="checkbox" id="hobiSpor" name="hobiler[]" value="Spor" class="form-check-input">
+                                                      <label for="hobiSpor" class="form-check-label">Spor</label>
+                                                </div>
+
+                                                <div class="form-check form-check-inline">
+                                                      <input type="checkbox" id="hobiYazilim" name="hobiler[]" value="Yazılım" class="form-check-input">
+                                                      <label for="hobiYazilim" class="form-check-label">Yazılım</label>
+                                                </div>
+                                          </div>
+
+                                          <div class="col-12">
+                                                <label for="messageText" class="form-label">Eklemek İstedikleriniz:</label>
+                                                <textarea id="messageText" name="messageText" class="form-control" rows="5" placeholder="Mesajınız"></textarea>
+                                          </div>
+
+                                          <div class="col-12">
+                                                <div id="formMessage" class="form-message"></div>
+                                          </div>
+
+                                          <div class="col-12 d-flex gap-2 flex-wrap">
+                                                <button type="button" id="nativeCheckButton" class="main-button">JavaScript ile Kontrol Et</button>
+                                                <button type="button" id="vueCheckButton" class="main-button secondary-button">Vue ile Kontrol Et</button>
+                                                <button type="submit" class="main-button">Formu Gönder</button>
+                                                <button type="reset" class="reset-button">Temizle</button>
+                                          </div>
+                                    </div>
+                              </form>
+                        </section>
                   </div>
             </main>
             <footer class="site-footer">
@@ -74,5 +153,6 @@
                   </div>
             </footer>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="js/iletisim.js"></script>
       </body>
 </html>
