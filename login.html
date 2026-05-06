@@ -58,15 +58,25 @@
 
             <main class="page-section">
                   <div class="container">
-                        <h1 class="page-title">Login</h1>
-                        <div class="content-card">
-                              <h2 class="section-title">Giriş Sistemi</h2>
-                              <p>bu sayfada öğrenci numarası ve okul mailiyle ile giriş yapılacaktır.</p>
-                        </div> <br>
+                        
+                        <div class="content-card mx-auto" style="max-width: 500px;">
+                              <h1 class="page-title text-center">Login</h1>
 
-                        <div class="content-card">
-                              <h2 class="section-title">Kullanıcı Bilgileri</h2>
+                              <form action="login.php" method="post">
+                                    <div class="mb-3">
+                                          <label class="form-label">Kullanıcı Adı</label>
+                                          <input type="text" name="username" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                          <label class="form-label">Şifre</label>
+                                          <input type="password" name="password" class="form-control">
+                                    </div>
+
+                                    <button type="submit" class="main-button w-100">Giriş Yap</button>
+                              </form>
                         </div>
+                        
                   </div>
             </main>
             <footer class="site-footer">

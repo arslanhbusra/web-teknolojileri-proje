@@ -1,19 +1,41 @@
+<?php
+
+$fullName = $_POST["fullName"];
+$emailAddress = $_POST["emailAddress"];
+$phoneNumber = $_POST["phoneNumber"];
+$cityName = $_POST["cityName"];
+$messageText = $_POST["messageText"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="tr">
       <head>
             <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Login Bilgileri</title>
+            <title>Form Sonucu</title>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
             <link rel="stylesheet" href="style.css">
       </head>
       <body>
-            <main class="page-section">
-                  <div class="container">
-                        <h1 class="page-title">Login Kontrol</h1>
-                        <div class="content-card">
-                              <p>login kontrol işlemi yapılacaktır.</p>
-                        </div>
+
+            <div class="container page-section">
+
+                  <div class="content-card">
+
+                        <h1 class="page-title">Gönderilen Bilgiler</h1>
+
+                        <p><strong>Ad Soyad:</strong> <?php echo $fullName; ?></p>
+
+                        <p><strong>E-posta:</strong> <?php echo $emailAddress; ?></p>
+
+                        <p><strong>Telefon:</strong> <?php echo $phoneNumber; ?></p>
+
+                        <p><strong>Şehir:</strong> <?php echo $cityName; ?></p>
+
+                        <p><strong>Mesaj:</strong> <?php echo $messageText; ?></p>
+
                   </div>
-            </main>
+            </div>
       </body>
 </html>

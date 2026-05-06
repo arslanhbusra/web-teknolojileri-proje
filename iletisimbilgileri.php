@@ -11,7 +11,7 @@
                   <div class="container">
                         <h1 class="page-title">İletişim Sonucu</h1>
                         <div class="content-card">
-                              <p>formdan gelen veriler gösterilecektir.</p>
+                              <p>Formdan gelen veriler gösterilecektir.</p>
                         </div>
                   </div>
             </main>

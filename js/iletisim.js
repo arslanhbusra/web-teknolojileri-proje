@@ -45,7 +45,7 @@ function checkForm() {
   }
 
   if (messageText === "") {
-    return showMessage("Mesaj alanı boş bırakılamaz.", false);
+    return showMessage("Mesaj alanı boş bırakılamaz. Lütfen doldurunuz.", false);
   }
 
   showMessage("Native JavaScript kontrolü başarılı. Form gönderilebilir.", true);
@@ -75,3 +75,22 @@ function showMessage(message, isSuccess) {
 
   return isSuccess;
 }
+
+const vueCheckButton = document.getElementById("vueCheckButton");
+
+vueCheckButton.addEventListener("click", function(){
+  const fullName = document.getElementById("tamisim").value.trim();
+  const emailAddress = document.getElementById("emailAddress").value.trim();
+
+  if (fullName.length < 3) {
+    showMessage("Vue Kontrolü: Ad Soyad en az 3 karakter olmalıdır.", false);
+    return;
+  }
+
+  if(!emailAddress.includes("@")) {
+    showMessage("Vue Kontrolü: E-posta formatı hatalı, @ işaretinin bulunduğundan emin olun.", false);
+    return;
+  }
+
+  showMessage("Vue Kontrolü başarılı. Form gönderilebilir.", true);
+})
