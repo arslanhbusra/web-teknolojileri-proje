@@ -6,7 +6,7 @@ const bookListDiv = document.getElementById("bookList");
 const musicListDiv = document.getElementById("musicList");
 
 const favoriFilmIDleri = [207, 530385, 4348, 9919, 258480, 994108, 11544, 568124]; 
-const favoriDiziIDleri = [1421, 48891, 67070, 61664, 4586, 66573, 32519, 43393 ];
+const favoriDiziIDleri = [1421, 48891, 70523, 61664, 4586, 66573, 32519, 43393 ];
 const favoriAlbumler = ["Smoke + Mirrors", "Trench", "reputation", "Lorde Melodrama","Fine Line", "Amir Tamino", "HIT ME HARD AND SOFT","The Rise and Fall of a Midwest Princess"];
 function renderCards(data, type) {
     if (!data.id) return "";
