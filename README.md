@@ -25,3 +25,5 @@ Bu proje, Web Teknolojileri dersi için hazırlanmıştır.
 - Sivas Şehir Tanıtım sayfası tamamlandı ve slider eklendi
 - Sivasspor Futbol Takımı sayfası tamamlandı
 - İlgi alanarım sayfası tamamlandı ve TMDb API ile veri çekildi.
+- İletişim sayfası ile kullanıcıdan mesaj alındı php kullanılarak.
+- Login sayfası ile kullanıcı girişi sağlandı.

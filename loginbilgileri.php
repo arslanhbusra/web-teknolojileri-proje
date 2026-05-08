@@ -1,9 +1,9 @@
 <?php
 
-$fullName = $_POST["fullName"];
+$fullName = $_POST["tamisim"]; 
 $emailAddress = $_POST["emailAddress"];
-$phoneNumber = $_POST["phoneNumber"];
-$cityName = $_POST["cityName"];
+$phoneNumber = $_POST["telNo"];
+$cityName = $_POST["sehirIsmi"];
 $messageText = $_POST["messageText"];
 
 ?>
