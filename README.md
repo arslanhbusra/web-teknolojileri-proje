@@ -27,3 +27,6 @@ Bu proje, Web Teknolojileri dersi için hazırlanmıştır.
 - İlgi alanarım sayfası tamamlandı ve TMDb API ile veri çekildi.
 - İletişim sayfası ile kullanıcıdan mesaj alındı php kullanılarak.
 - Login sayfası ile kullanıcı girişi sağlandı.
+
+## Site Linki
+- https://b251210076.infinityfreeapp.com/index.html
